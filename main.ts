@@ -910,14 +910,14 @@ bad_dude = sprites.create(img`
     .......7777777777777................
     `, SpriteKind.Enemy)
 controller.moveSprite(man_of_the_skull, 100, 100)
+const ops = undefined
 class Test {
 test() {
 console.log('brruh')
 }
+MoveSprite(op = ops) {
+controller.moveSprite(op, 100, 100)
 }
-for(let i = 0; i != 10;i++) {
-const op = new Test()
-op.test()
 }
 forever(function () {
     music.playMelody("C E G D G B A C5 ", 240)
